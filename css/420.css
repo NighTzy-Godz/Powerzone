@@ -1,0 +1,357 @@
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  /*---------- HEADER --------------*/
+  header {
+    background-color: var(--black);
+    padding: 6px;
+    position: relative;
+  }
+
+  header .logoName {
+    margin-left: 10px;
+
+    font-family: var(--oswald);
+  }
+
+  header .logoName a {
+    font-size: 35px;
+    color: var(--white);
+  }
+
+  header .logoName #headerSpan {
+    color: var(--red);
+  }
+
+  header .headerHide {
+    display: none;
+  }
+
+  header .headerHide.headerShow {
+    display: block;
+  }
+
+  header .navHeader {
+    /* display: none; */
+    width: 100%;
+  }
+
+  header .navHeader.navHeaderShow {
+    display: block;
+  }
+
+  header .navHeader li {
+    margin-bottom: 15px;
+    width: 100%;
+    /* padding: 0px 5px 5px 0px; */
+    display: block;
+  }
+
+  header .navHeader li a {
+    display: block;
+    color: var(--white);
+    font-family: var(--poppins);
+    font-size: 14px;
+    width: 100% !important;
+    padding: 10px 50% 10px 10px;
+  }
+
+  header .navHeader li a:hover {
+    background-color: red;
+  }
+
+  header .headerSocMed {
+    margin: 20px 0px;
+  }
+
+  .headerSocMed ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .headerSocMed ul li a .fab {
+    font-size: 25px;
+    color: white;
+  }
+
+  .headerSocMed .fa-facebook-square:hover {
+    color: #4267b2;
+  }
+
+  .headerSocMed .fa-instagram:hover {
+    color: rgb(221, 42, 123);
+  }
+
+  .headerSocMed .fa-twitter:hover {
+    color: #1da1f2;
+  }
+
+  header #openHeader {
+    position: absolute;
+    right: 25px;
+    top: 22px;
+    color: var(--red);
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  /* ------------ LANDING PAGE ------------------- */
+
+  .landingPage {
+    padding-top: 20px;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+    height: 100vh;
+  }
+
+  .landingText {
+    margin-top: 20%;
+  }
+
+  .landingText #landing {
+    display: block;
+    color: white;
+    font-family: var(--oswald);
+    margin-bottom: 5px;
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+
+  .landingText h1 {
+    color: var(--white);
+    font-family: var(--bebas);
+    font-size: 90px;
+    font-weight: 600;
+  }
+
+  .landingText .landingStrong {
+    color: var(--red);
+  }
+
+  .landingVid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.5)
+    );
+  }
+
+  .landingButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .landingButtons button {
+    width: 80%;
+    padding: 13px;
+    border: none;
+    border-radius: 3px;
+    font-family: var(--poppins);
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .landingButtons button:hover {
+    margin-left: 20px;
+    transition: 0.4s;
+  }
+  .landingButtons #own {
+    background-color: var(--black);
+    color: var(--red);
+  }
+
+  .landingButtons #coach {
+    background-color: var(--red);
+    color: rgba(255, 255, 255, 0.849);
+  }
+
+  /* ----------- REASON ---------------- */
+
+  .reason {
+    padding-top: 20px;
+    background-color: #0a0a0a;
+  }
+
+  .reasonTag {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .reasonTag p {
+    color: var(--red);
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-family: var(--oswald);
+  }
+
+  .reasonTag h2 {
+    font-size: 40px;
+    color: var(--white);
+    font-family: var(--bebas);
+    letter-spacing: 1px;
+  }
+
+  .reasonTag #redLine {
+    display: block;
+    height: 3px;
+    background-color: rebeccapurple;
+    width: 80%;
+    margin: auto;
+  }
+  .reasonRow {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .reasonRow .reasonBox {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .reasonBox .reasonImg {
+    cursor: pointer;
+    text-align: center;
+
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.808);
+  }
+
+  .reasonBox .reasonImg i {
+    color: var(--red);
+    font-size: 30px;
+    margin-top: 24px;
+  }
+
+  .reasonItem {
+    margin-bottom: 10px;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .reasonItem h2 {
+    color: rgba(255, 255, 255, 0.801);
+    font-family: var(--oswald);
+    font-size: 30px;
+  }
+
+  .reasonDesc {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .reasonDesc p {
+    color: rgba(255, 255, 255, 0.801);
+    font-family: var(--poppins);
+    font-size: 12px;
+  }
+
+  /* ---------------------- BMI CALCULATOR ------------------------------------ */
+  .bmi {
+    padding-top: 30px;
+    background-color: #121212;
+  }
+
+  /* ----- BMI LEFT ------- */
+  .bmiLeft {
+    margin-bottom: 30px;
+  }
+
+  .bmiLeft .bmiLeftTitle {
+    margin-bottom: 22px;
+  }
+
+  .bmiLeftTitle span {
+    margin-bottom: 6px;
+    display: block;
+    font-family: var(--oswald);
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.795);
+  }
+
+  .bmiLeftTitle h1 {
+    font-family: var(--oswald);
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.795);
+    color: var(--red);
+  }
+
+  .bmiLeftDesc p {
+    font-family: var(--poppins);
+    font-weight: 500;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.782);
+  }
+
+  /* BMI RIGHT */
+
+  .bmiRight {
+    padding-bottom: 30px;
+  }
+
+  .bmiResult {
+    margin-bottom: 20px;
+  }
+
+  .bmiResult h1 {
+    font-family: var(--oswald);
+    font-size: 30px;
+    color: var(--red);
+  }
+
+  .bmiBox {
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .bmiBox input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+  }
+
+  .bmiBtn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bmiBtn button {
+    width: 47%;
+    padding: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 100;
+    letter-spacing: 1px;
+    font-family: var(--oswald);
+    border: none;
+  }
+
+  .bmiBtn #calculate {
+    background-color: #00b96d;
+    color: rgba(255, 255, 255, 0.871);
+  }
+
+  .bmiBtn #reset {
+    background-color: #e98486;
+    color: white;
+  }
+}

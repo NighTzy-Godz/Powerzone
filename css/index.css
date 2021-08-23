@@ -1,0 +1,29 @@
+:root {
+  --red: #d71619;
+  --white: #ffffffdc;
+  --black: #090a07;
+  --gray: #151616;
+
+  --poppins: "Poppins", sans-serif;
+  --oswald: "Oswald", sans-serif;
+  --bebas: "Big Shoulders Display", cursive;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}

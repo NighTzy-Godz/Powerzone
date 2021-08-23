@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Powerzone/css/index.css" />
+
+    <!-- POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BEBAS  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- OSWALD -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
+    <!-- 420 PX MOBLIE SIZES AND BELOW  -->
+    <link rel="stylesheet" href="/Powerzone/css/420.css" />
+
+    <!-- 421 PX TO 580 PX MOBILE SIZES  -->
+    <link rel="stylesheet" href="/Powerzone/css/580.css" />
+
+    <title>POWERZONE</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="headerContainer">
+          <div class="logoName">
+            <a href="/Powerzone/index.html"
+              ><span id="headerSpan">POWER</span> ZONE</a
+            >
+          </div>
+          <div class="headerHide">
+            <ul class="navHeader">
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT US</a></li>
+              <li><a href="#">WORKOUTS</a></li>
+              <li><a href="#">DIET PLAN</a></li>
+              <li><a href="#">MEMBERSHIP</a></li>
+              <li><a href="#">BMI CALCULATOR</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+            <div class="headerSocMed">
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram" style=""></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <i class="fas fa-bars" id="openHeader"></i>
+        </div>
+      </div>
+    </header>
+
+    <div class="bmi">
+      <div class="container">
+        <div class="bmiContainer">
+          <div class="bmiLeft">
+            <div class="bmiLeftTitle">
+              <span id="bmispan">Find Out Your</span>
+              <h1 id="bmih1">Body Mass Index (BMI)</h1>
+            </div>
+            <div class="bmiLeftDesc">
+              <p class="bmiDesc">
+                Your BMI is a measurement that is a ratio of your weight and
+                height. It’s a good way to gauge whether your weight is in
+                healthy proportion to your height. In fact, knowing your BMI can
+                help you – and your GP – determine any health risks you may face
+                if it’s outside of the healthy range.
+                <br />
+                <br />
+                While it may be a great guide to establishing the amount of body
+                fat you carry, your BMI won’t take into consideration your age,
+                sex, ethnicity, or even muscle mass. It’s also not appropriate
+                in determining a healthy weight in the elderly, children,
+                pregnant women or even athletes.
+                <br />
+                <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus, molestias, adipisci officia asperiores aliquid est
+                vel in corporis natus nemo et dolore fugit expedita inventore
+                sed totam autem cumque! Fugit!
+              </p>
+            </div>
+          </div>
+          <div class="bmiRight">
+            <div class="bmiResult">
+              <h1 id="indicate">YOUR STATUS</h1>
+            </div>
+            <div class="bmiBox">
+              <input
+                type="text"
+                id="weight"
+                placeholder="WEIGHT IN KG"
+                onkeyup="letter(this)"
+              />
+
+              <input
+                type="text"
+                id="height"
+                placeholder="Height in CM"
+                onkeyup="letter(this)"
+              />
+            </div>
+
+            <div class="bmiBtn">
+              <button onclick="getValue()" id="calculate">CALCULATE</button>
+
+              <button onClick="reset()" id="reset">RESET</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/Powerzone/index.js"></script>
+  </body>
+</html>
