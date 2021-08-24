@@ -1,11 +1,44 @@
 const headerToggler = document.querySelector("#openHeader");
 
-// HEAD NAVBAR
+// ----------------- HEAD NAVBAR -------------------------
 headerToggler.addEventListener("click", () => {
   let headerHide = document.querySelector(".headerHide");
 
   headerHide.classList.toggle("headerShow");
 });
+
+// ----------------- RESOURCES IMAGE ----------------------
+
+const reasonImg = document.querySelectorAll(".reasonImg");
+const image = document.querySelectorAll(".i");
+
+// BACKGROUND IMAGE
+for (let items of reasonImg) {
+  items.addEventListener("mouseenter", () => {
+    items.style.backgroundColor = "var(--red)";
+  });
+
+  items.addEventListener("mouseleave", () => {
+    items.style.backgroundColor = "rgba(255, 255, 255, 0.795)";
+  });
+
+  images.addEventListener("mouseenter", () => {
+    images.style.color = "red";
+  });
+  images.addEventListener("mouseleave", () => {
+    images.style.color = "rgba(255, 255, 255, 0.795)";
+  });
+}
+
+// for (let images of image) {
+//   images.addEventListener("mouseenter", () => {
+//     images.style.color = "red";
+//   });
+
+//   images.addEventListener("mouseleave", () => {
+//     images.style.color = "rgba(255, 255, 255, 0.795)";
+//   });
+// }
 
 // -----------------  BMI CALCULATOR ----------------------
 

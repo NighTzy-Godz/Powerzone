@@ -167,7 +167,7 @@
     transition: 0.4s;
   }
   .landingButtons #own {
-    background-color: var(--black);
+    background-color: rgba(255, 255, 255, 0.885);
     color: var(--red);
   }
 
@@ -346,12 +346,124 @@
   }
 
   .bmiBtn #calculate {
-    background-color: #00b96d;
+    background-color: #00b96c;
     color: rgba(255, 255, 255, 0.871);
   }
 
   .bmiBtn #reset {
-    background-color: #e98486;
+    background-color: #f0494c;
     color: white;
+  }
+
+  /* ------------------- MEMBERSHIP -------------------- */
+
+  .membership {
+    background-color: #121212;
+    padding: 15px;
+  }
+
+  .memberTitle {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .memberTitle span {
+    color: rgba(255, 255, 255, 0.83);
+    font-family: var(--oswald);
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+    display: block;
+  }
+
+  .memberTitle h1 {
+    color: #00b96c;
+    font-family: var(--bebas);
+  }
+
+  .memberContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .memberBox {
+    border: 1px solid #00b96cc1;
+    margin-bottom: 30px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .memberBox h3 {
+    color: rgba(255, 255, 255, 0.83);
+    font-family: var(--oswald);
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .memberPrice {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .memberPrice h2 {
+    color: #00b96c;
+    font-family: var(--oswald);
+    font-size: 50px;
+  }
+
+  .memberBox ul {
+    margin-bottom: 17px;
+  }
+
+  .memberBox li {
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.878);
+    font-family: var(--poppins);
+    font-size: 14px;
+  }
+
+  .memberBox li i {
+    color: #00b96c;
+    margin-right: 6px;
+  }
+
+  .three {
+    order: 3;
+  }
+  .six {
+    order: 2;
+  }
+  .twelve {
+    order: 1;
+  }
+
+  .memberBtn {
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .memberBtn button {
+    cursor: pointer;
+    width: 100%;
+    padding: 8px;
+    font-family: var(--oswald);
+    letter-spacing: 2px;
+    color: white;
+    font-size: 16px;
+    background-color: #00b96c;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+
+  /* MEMBERSHIP HOVER */
+  .memberBox:hover > h3 {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .memberBox:hover {
+    background-color: #f0494c;
   }
 }
