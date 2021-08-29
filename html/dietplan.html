@@ -85,80 +85,72 @@
       </div>
     </header>
 
-    <div class="membership">
+    <div class="diet">
       <div class="container">
-        <div class="memberTitle">
-          <span>Our Plan</span>
-          <h1>CHOOSE YOUR PRICING PLAN</h1>
-        </div>
-        <div class="memberContainer">
-          <div class="memberBox three">
-            <h3>3 MONTHS PLAN</h3>
-            <div class="memberPrice">
-              <h2>$35.0</h2>
+        <div class="dietContainer">
+          <div class="dietLeft">
+            <div class="dietLeftTitle">
+              <span id="dietspan">Find Out Your Meal Plan</span>
+              <h1 id="dieth1">Depending On Your BMI</h1>
             </div>
-            <div class="memberBenefit">
-              <ul>
-                <li>
-                  <i class="far fa-check-circle"></i>Start Free For 1 Week,
-                  Cancel Anytime
-                </li>
-                <li>
-                  <i class="far fa-check-circle"></i>Unlimited Access to Our Gym
-                  for 6/7
-                </li>
-                <li><i class="far fa-check-circle"></i>Diet Plan</li>
-                <li><i class="far fa-check-circle"></i></li>
-              </ul>
-            </div>
-            <div class="memberBtn">
-              <button>Enroll Now</button>
-            </div>
-          </div>
-          <div class="memberBox twelve">
-            <h3>12 MONTHS PLAN</h3>
-            <div class="memberPrice">
-              <h2>$100</h2>
-            </div>
-            <div class="memberBenefit">
-              <ul>
-                <li>
-                  <i class="far fa-check-circle"></i>Start Free For 1 Week,
-                  Cancel Anytime
-                </li>
-                <li>
-                  <i class="far fa-check-circle"></i>Unlimited Access to Our Gym
-                  24/7
-                </li>
-                <li><i class="far fa-check-circle"></i>Personal Trainer</li>
-                <li><i class="far fa-check-circle"></i>Best Diet Plan</li>
-              </ul>
-            </div>
-            <div class="memberBtn">
-              <button>Enroll Now</button>
+            <div class="dietContent" style="display: none">
+              <div class="dietDay">
+                <ul>
+                  <li class="dietPickDay">Day 1</li>
+                  <li class="dietPickDay">Day 2</li>
+                  <li class="dietPickDay">Day 3</li>
+                  <li class="dietPickDay">Day 4</li>
+                  <li class="dietPickDay">Day 5</li>
+                  <li class="dietPickDay">Day 6</li>
+                  <li class="dietPickDay">Day 7</li>
+                </ul>
+              </div>
+              <div class="dietImg">
+                <img src="" alt="" srcset="" id="dietImg" />
+              </div>
+              <div id="dietTime">
+                <ul>
+                  <li><button class="dietTime">BREAKFAST</button></li>
+                  <li><button class="dietTime">LUNCH</button></li>
+                  <li><button class="dietTime">DINNER</button></li>
+                  <li><button class="dietTime">DESSERT</button></li>
+                  <li><button class="dietTime">SNACKS</button></li>
+                </ul>
+              </div>
+              <div class="dietName">
+                <h3 id="dietName"></h3>
+              </div>
+              <div class="dietRecipe">
+                <p id="dietRecipe"></p>
+              </div>
+              <i class="far fa-arrow-alt-circle-right" id="dayNext"></i>
+              <i class="far fa-arrow-alt-circle-left" id="dayBack"></i>
             </div>
           </div>
-          <div class="memberBox six">
-            <h3>6 MONTHS PLAN</h3>
-            <div class="memberPrice">
-              <h2>$68.9</h2>
+          <div class="dietRight">
+            <div class="dietResult">
+              <h1 id="dietIndicate">YOUR STATUS</h1>
             </div>
-            <div class="memberBenefit">
-              <ul>
-                <li>
-                  <i class="far fa-check-circle"></i>Start Free For 1 Week,
-                  Cancel Anytime
-                </li>
-                <li>
-                  <i class="far fa-check-circle"></i>Unlimited Access to Our Gym
-                  for 12/7
-                </li>
-                <li><i class="far fa-check-circle"></i>Personal Trainer</li>
-                <li><i class="far fa-check-circle"></i>Best Diet Plan</li>
-              </ul>
+            <div class="dietBox">
+              <input
+                type="text"
+                class="weight"
+                placeholder="WEIGHT IN KG"
+                onkeyup="letter(this)"
+              />
+
+              <input
+                type="text"
+                class="height"
+                placeholder="Height in CM"
+                onkeyup="letter(this)"
+              />
             </div>
-            <div class="memberBtn">
-              <button>Enroll Now</button>
+
+            <div class="dietBtn">
+              <button onclick="dietInit()" id="calculate">CALCULATE</button>
+
+              <button onClick="dietReset()" id="reset">RESET</button>
             </div>
           </div>
         </div>

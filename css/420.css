@@ -424,7 +424,7 @@
   }
 
   .memberBox li i {
-    color: #00b96c;
+    color: #f0494c;
     margin-right: 6px;
   }
 
@@ -458,12 +458,208 @@
     text-transform: uppercase;
   }
 
-  /* MEMBERSHIP HOVER */
-  .memberBox:hover > h3 {
-    color: rgba(255, 255, 255, 0.85);
+  .memberBtn button:hover {
+    background-color: #f0494c;
+    transition: 0.4s;
+    color: black;
   }
 
-  .memberBox:hover {
+  /* -------------------------------------- DIETPLAN ----------------------------------- */
+  .diet {
+    padding-top: 30px;
+    background-color: #121212;
+  }
+
+  /* ----- DIET LEFT ------- */
+  .dietLeft {
+    margin-bottom: 30px;
+  }
+
+  .dietLeft .dietLeftTitle {
+    margin-bottom: 22px;
+  }
+
+  .dietLeftTitle span {
+    margin-bottom: 6px;
+    display: block;
+    font-family: var(--oswald);
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.795);
+  }
+
+  .dietLeftTitle h1 {
+    font-family: var(--oswald);
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.795);
+    color: var(--red);
+  }
+
+  .dietContent {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+  .dietDay {
+    margin-bottom: 25px;
+
+    position: relative;
+    justify-content: left;
+  }
+
+  .dietDay ul {
+    display: flex;
+    overflow-y: hidden;
+    width: 80%;
+    margin: auto;
+    left: 0;
+    background-color: #121212;
+    padding: 10px;
+  }
+
+  .dietDay ul .dietPickDay {
+    position: relative;
+    color: white;
+    margin-right: 40px;
+    min-width: 50px;
+    cursor: pointer;
+
+    padding: 5px;
+  }
+
+  .dietPickDay.dietPicked {
+    color: #00b96c !important;
+  }
+
+  .dietDay .dietImg {
+    /* display: block; */
+    width: 100%;
+  }
+
+  .dietImg img {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #dietTime {
+    margin-bottom: 20px;
+  }
+
+  #dietTime ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #dietTime ul .dietTime {
+    padding: 7px;
+
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--oswald);
+    font-size: 13px;
+    color: black;
+    cursor: pointer;
+  }
+
+  #dietTime ul .dietTime.selected {
+    background-color: #00b96c;
+    color: rgba(255, 255, 255, 0.885);
+  }
+
+  .dietName {
+    margin-bottom: 20px;
+  }
+
+  .dietName h3 {
+    font-size: 30px;
+    color: white;
+    font-family: var(--oswald);
+  }
+
+  .dietRecipe {
+    width: 100%;
+  }
+
+  .dietRecipe p {
+    font-family: var(--poppins);
+  }
+
+  .dietRecipe ul {
+    display: flex;
+  }
+
+  .dietContent i {
+    color: rgba(255, 255, 255, 0.878);
+    font-size: 22px;
+    position: absolute;
+    top: 0.6rem;
+  }
+
+  .dietContent i:hover {
+    color: #f0494c;
+  }
+
+  .dietContent #dayNext {
+    right: 0;
+  }
+
+  /* DIET RIGHT */
+
+  .dietRight {
+    padding-bottom: 30px;
+  }
+
+  .dietResult {
+    margin-bottom: 20px;
+  }
+
+  .dietResult h1 {
+    font-family: var(--oswald);
+    font-size: 28px;
+    color: var(--red);
+  }
+
+  .dietBox {
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .dietBox input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+  }
+
+  .dietBtn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dietBtn button {
+    width: 47%;
+    padding: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 100;
+    letter-spacing: 1px;
+    font-family: var(--oswald);
+    border: none;
+  }
+
+  .dietBtn #calculate {
+    background-color: #00b96c;
+    color: rgba(255, 255, 255, 0.871);
+  }
+
+  .dietBtn #reset {
     background-color: #f0494c;
+    color: white;
   }
 }

@@ -60,7 +60,7 @@
               <li><a href="#">HOME</a></li>
               <li><a href="#">ABOUT US</a></li>
               <li><a href="#">WORKOUTS</a></li>
-              <li><a href="#">DIET PLAN</a></li>
+              <li><a href="/Powerzone/html/dietplan.html">DIET PLAN</a></li>
               <li><a href="/Powerzone/html/membership.html">MEMBERSHIP</a></li>
               <li><a href="/Powerzone/html/bmi.html">BMI CALCULATOR</a></li>
               <li><a href="#">CONTACT</a></li>
@@ -123,23 +123,23 @@
             <div class="bmiBox">
               <input
                 type="text"
-                id="weight"
+                class="weight"
                 placeholder="WEIGHT IN KG"
                 onkeyup="letter(this)"
               />
 
               <input
                 type="text"
-                id="height"
+                class="height"
                 placeholder="Height in CM"
                 onkeyup="letter(this)"
               />
             </div>
 
             <div class="bmiBtn">
-              <button onclick="getValue()" id="calculate">CALCULATE</button>
+              <button onclick="bmiSetColor()" id="calculate">CALCULATE</button>
 
-              <button onClick="reset()" id="reset">RESET</button>
+              <button onClick="bmiReset()" id="reset">RESET</button>
             </div>
           </div>
         </div>
