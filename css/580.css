@@ -263,4 +263,409 @@
     font-family: var(--poppins);
     font-size: 13px;
   }
+
+  /* ---------------------- BMI CALCULATOR ------------------------------------ */
+  .bmi {
+    padding-top: 30px;
+    background-color: #121212;
+  }
+
+  /* ----- BMI LEFT ------- */
+  .bmiLeft {
+    margin-bottom: 30px;
+  }
+
+  .bmiLeft .bmiLeftTitle {
+    margin-bottom: 22px;
+  }
+
+  .bmiLeftTitle span {
+    margin-bottom: 6px;
+    display: block;
+    font-family: var(--oswald);
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.795);
+  }
+
+  .bmiLeftTitle h1 {
+    font-family: var(--oswald);
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.795);
+    color: var(--red);
+  }
+
+  .bmiLeftDesc p {
+    font-family: var(--poppins);
+    font-weight: 500;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.782);
+  }
+
+  /* BMI RIGHT */
+
+  .bmiRight {
+    padding-bottom: 30px;
+  }
+
+  .bmiResult {
+    margin-bottom: 20px;
+  }
+
+  .bmiResult h1 {
+    font-family: var(--oswald);
+    font-size: 28px;
+    color: var(--red);
+  }
+
+  .bmiBox {
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .bmiBox input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+  }
+
+  .bmiBtn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bmiBtn button {
+    width: 47%;
+    padding: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 100;
+    letter-spacing: 1px;
+    font-family: var(--oswald);
+    border: none;
+  }
+
+  .bmiBtn #calculate {
+    background-color: #00b96c;
+    color: rgba(255, 255, 255, 0.871);
+  }
+
+  .bmiBtn #reset {
+    background-color: #f0494c;
+    color: white;
+  }
+
+  /* ------------------- MEMBERSHIP -------------------- */
+
+  .membership {
+    background-color: #121212;
+    padding: 15px;
+  }
+
+  .memberTitle {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .memberTitle span {
+    color: rgba(255, 255, 255, 0.83);
+    font-family: var(--oswald);
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+    display: block;
+  }
+
+  .memberTitle h1 {
+    color: #00b96c;
+    font-family: var(--bebas);
+    font-size: 35px;
+  }
+
+  .memberContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .memberBox {
+    border: 1px solid #00b96cc1;
+    margin-bottom: 30px;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  .memberBox h3 {
+    color: rgba(255, 255, 255, 0.83);
+    font-family: var(--oswald);
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .memberPrice {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .memberPrice h2 {
+    color: #00b96c;
+    font-family: var(--oswald);
+    font-size: 50px;
+  }
+
+  .memberBox ul {
+    margin-bottom: 17px;
+  }
+
+  .memberBox li {
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.878);
+    font-family: var(--poppins);
+    font-size: 14px;
+  }
+
+  .memberBox li i {
+    color: #f0494c;
+    margin-right: 6px;
+  }
+
+  .three {
+    order: 3;
+  }
+  .six {
+    order: 2;
+  }
+  .twelve {
+    order: 1;
+  }
+
+  .memberBtn {
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .memberBtn button {
+    cursor: pointer;
+    width: 100%;
+    padding: 8px;
+    font-family: var(--oswald);
+    letter-spacing: 2px;
+    color: white;
+    font-size: 16px;
+    background-color: #00b96c;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+
+  .memberBtn button:hover {
+    background-color: #f0494c;
+    transition: 0.4s ease-in-out;
+    color: black;
+  }
+
+  /* -------------------------------------- DIETPLAN ----------------------------------- */
+  .diet {
+    padding-top: 30px;
+    background-color: #121212;
+  }
+
+  /* ----- DIET LEFT ------- */
+  .dietLeft {
+    margin-bottom: 30px;
+  }
+
+  .dietLeft .dietLeftTitle {
+    margin-bottom: 22px;
+  }
+
+  .dietLeftTitle span {
+    margin-bottom: 6px;
+    display: block;
+    font-family: var(--oswald);
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.795);
+  }
+
+  .dietLeftTitle h1 {
+    font-family: var(--oswald);
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.795);
+    color: var(--red);
+  }
+
+  .dietContent {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+  .dietDay {
+    margin-bottom: 25px;
+
+    position: relative;
+    justify-content: left;
+  }
+
+  .dietDay ul {
+    display: flex;
+    overflow-y: hidden;
+    width: 100%;
+    margin: auto;
+    left: 0;
+    background-color: #121212;
+    padding: 10px;
+  }
+
+  .dietDay ul .dietPickDay {
+    position: relative;
+    color: white;
+    margin-right: 40px;
+    min-width: 50px;
+    cursor: pointer;
+
+    padding: 5px;
+  }
+
+  .dietPickDay.dietPicked {
+    color: #00b96c !important;
+  }
+
+  .dietDay .dietImg {
+    display: none;
+    width: 100%;
+  }
+
+  .dietImg img {
+    /* height: 250px; */
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #dietTime {
+    margin-bottom: 20px;
+  }
+
+  #dietTime ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  #dietTime ul .dietTime {
+    padding: 7px 15px 7px 15px;
+    display: block;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--oswald);
+    font-size: 13px;
+    color: black;
+    cursor: pointer;
+  }
+
+  #dietTime ul .dietTime.selected {
+    background-color: #00b96c;
+    color: rgba(255, 255, 255, 0.885);
+  }
+
+  .dietName {
+    margin-bottom: 20px;
+  }
+
+  .dietName h3 {
+    font-size: 30px;
+    color: white;
+    font-family: var(--oswald);
+  }
+
+  .dietRecipe {
+    width: 100%;
+  }
+
+  .dietRecipe p {
+    font-family: var(--poppins);
+  }
+
+  .dietRecipe ul {
+    display: flex;
+  }
+
+  .dietContent i {
+    color: rgba(255, 255, 255, 0.878);
+    font-size: 22px;
+    position: absolute;
+    top: 0.6rem;
+  }
+
+  .dietContent i:hover {
+    color: #f0494c;
+  }
+
+  .dietContent #dayNext {
+    right: 0;
+  }
+
+  /* DIET RIGHT */
+
+  .dietRight {
+    padding-bottom: 30px;
+  }
+
+  .dietResult {
+    margin-bottom: 20px;
+  }
+
+  .dietResult h1 {
+    font-family: var(--oswald);
+    font-size: 28px;
+    color: var(--red);
+  }
+
+  .dietBox {
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .dietBox input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+  }
+
+  .dietBtn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dietBtn button {
+    width: 47%;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 100;
+    letter-spacing: 1px;
+    font-family: var(--oswald);
+    border: none;
+  }
+
+  .dietBtn #calculate {
+    background-color: #00b96c;
+    color: rgba(255, 255, 255, 0.871);
+  }
+
+  .dietBtn #reset {
+    background-color: #f0494c;
+    color: white;
+  }
 }

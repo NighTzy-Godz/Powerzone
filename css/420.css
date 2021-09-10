@@ -510,7 +510,7 @@
   .dietDay ul {
     display: flex;
     overflow-y: hidden;
-    width: 80%;
+    width: 100%;
     margin: auto;
     left: 0;
     background-color: #121212;
@@ -532,12 +532,12 @@
   }
 
   .dietDay .dietImg {
-    /* display: block; */
+    display: none;
     width: 100%;
   }
 
   .dietImg img {
-    height: 250px;
+    /* height: 250px; */
     width: 100%;
     margin-bottom: 20px;
   }
